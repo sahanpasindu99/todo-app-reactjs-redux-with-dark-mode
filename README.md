@@ -1,6 +1,6 @@
 # Todo App
 
-A simple Todo app built with ReactJS and Redux for user and task management. This application uses bcrypt for password management and local storage for persisting data.
+A authenticated Todo app built with ReactJS and Redux for user and task management. This application uses bcrypt for password management and local storage for persisting data.
 
 ## Features
 

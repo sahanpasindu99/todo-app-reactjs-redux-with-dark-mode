@@ -24,7 +24,7 @@ function App() {
           />
           <Route
             path="/register"
-            element={<ProtectedRoute element={<RegisterPage />} redirectTo="/" />}
+            element={<ProtectedRoute element={<RegisterPage />} redirectTo="/register" />}
           />
           <Route
             path="/todos"

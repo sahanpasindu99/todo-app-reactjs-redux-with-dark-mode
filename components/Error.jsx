@@ -26,10 +26,10 @@ const Error = () => {
         <Link to="/">
           <span
             className={`inline-block px-4 py-2 mt-6 text-sm font-semibold rounded-lg sm:px-6 sm:py-3 sm:text-base ${
-              darkMode ? 'bg-yellow-500 text-black hover:bg-yellow-600' : 'bg-blue-500 text-white hover:bg-blue-600'
+              darkMode ? 'bg-yellow-500 text-black hover:bg-yellow-600' : 'bg-blue-900 text-white hover:bg-blue-800'
             }`}
           >
-            Go Back Home
+          Back to home
           </span>
         </Link>
       </div>
