@@ -2,6 +2,10 @@
 
 A authenticated Todo app built with ReactJS and Redux for user and task management. This application uses bcrypt for password management and local storage for persisting data.
 
+# Deployed Link**
+
+   https://todo-app-reactjs-redux-with-dark-mode.vercel.app/
+
 ## Features
 
 - **User Management**: Register and log in users.
@@ -25,3 +29,7 @@ Follow these steps to get the application running on your local machine:
    ```bash
    git clone https://github.com/sahanpasindu99/todo-app-reactjs-redux-with-dark-mode.git
    npm install
+
+2. **Deployed Link**
+
+   https://todo-app-reactjs-redux-with-dark-mode.vercel.app/
