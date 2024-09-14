@@ -113,7 +113,7 @@ const AuthForm = ({ type }) => {
             )}
             <button
               type="submit"
-              className={`w-full px-3 py-3 mt-3.5 mb-2 text-xs font-semibold rounded-md shadow-sm ${darkMode ? 'bg-black text-white hover:bg-gray-950' : 'bg-black text-white hover:bg-gray-800'}`}
+              className={`w-full px-3 py-3 mt-3.5 mb-3 text-sm font-semibold rounded-md shadow-sm ${darkMode ? 'bg-black text-white hover:bg-gray-950' : 'bg-black text-white hover:bg-gray-800'}`}
             >
               {isLogin ? 'Login' : 'Register'}
             </button>
@@ -121,7 +121,7 @@ const AuthForm = ({ type }) => {
         </Formik>
       </div>
       <div className="absolute bottom-0 right-0 p-4 z-[1] hidden md:block">
-        <img src={login2} alt="Background" className="h-auto w-80" draggable={false} />
+        <img src={login2} alt="Background" className="h-auto w-[23rem]" draggable={false} />
       </div>
     </div>
   );
