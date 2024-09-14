@@ -23,5 +23,5 @@ Follow these steps to get the application running on your local machine:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
-   cd your-repository-name
+   git clone https://github.com/sahanpasindu99/todo-app-reactjs-redux-with-dark-mode.git
+   npm install
