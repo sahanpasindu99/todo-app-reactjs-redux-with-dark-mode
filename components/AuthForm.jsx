@@ -30,18 +30,28 @@ const AuthForm = ({ type }) => {
   const handleSubmit = async (values) => {
     try {
       if (isLogin) {
-        await dispatch(login({ email: values.email, password: values.password })).unwrap();
-        toast.success("Successfully Logged In");
-        navigate('/todos');
+        try {
+          await dispatch(login({ email: values.email, password: values.password })).unwrap();
+          toast.success("Successfully Logged In");
+          navigate('/todos');
+        } catch (error) {
+          toast.error("Invalid Credentials");
+        }
       } else {
-        await dispatch(register({ email: values.email, password: values.password, name: values.name })).unwrap();
-        toast.success("Successfully Registered");
-        navigate('/');
+        try {
+          await dispatch(register({ email: values.email, password: values.password, name: values.name })).unwrap();
+          toast.success("Successfully Registered");
+          navigate('/');
+        } catch (error) {
+          toast.error("Registration failed. Enter valid email & password");
+        }
       }
     } catch (error) {
+      // This catch block may not be necessary unless there's code outside of isLogin and the else branch that needs to be handled.
       toast.error(error.message || "An unexpected error occurred. Please try again.");
     }
   };
+  
 
   return (
     <div className={`relative flex items-center justify-center ${darkMode ? 'bg-gray-900' : 'bg-none'}`} style={{ height: 'calc(100vh - 65px)' }}>
